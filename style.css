@@ -1,0 +1,80 @@
+/* REGOLE GENERALI */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #2e3a46;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* LOGO SPOTY */
+.logo {
+    width: 60px;
+}
+
+/* MAIN */
+main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: #1e2d3b;
+    overflow-y: auto;
+}
+
+/* CONTENUTO DISCO */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* SINGOLO DISCO */
+.single-disc {
+    width: calc((100% / 5) - 40px);
+    margin: 10px 20px;
+    padding: 15px;
+    background-color: #2e3a46;
+}
+
+/* TITOLO */
+.single-disc-title {
+    padding: 10px;
+}
+
+.single-disc-title h2 {
+    color: white;
+    font-size: 18px;
+}
+
+/* AUTORE E ANNO */
+.single-disc-author {
+    padding-top: 10px;
+}
+
+.single-disc-author, .single-disc-year {
+    color: gray;
+    font-size: 14px;
+}

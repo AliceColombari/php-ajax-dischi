@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISCHI API</title>
+    <!-- LINK STYLE -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="root">
+        <!-- HEADER -->
+        <header>
+            <!-- HEADER LOGO -->
+            <div class="logo">
+                <img src="./logo.png" alt="logo spoty">
+            </div>
+        </header>
+        <!-- END HEADER -->
+    
+        <!-- MAIN -->
+        <main>
+            <!-- CONTENITORE CARD DISCHI-->
+            <div class="container">
+                <!-- CONTENUTO CARD DISCO -->
+                <div class="content">
+                    <!-- CICLO CONTENUTI CARD DISCO -->
+                    <div v-for="item in arrayAlbum" class="single-disc">
+                        <!-- DISCO IMAGE -->
+                        <div class="single-disc-image">
+                            <img :src="item.poster" alt="image disco">
+                        </div>
+                        <!-- TITLE -->
+                        <div class="single-disc-title">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+                        <!-- AUTHOR -->
+                        <div class="single-disc-author">
+                            {{ item.author }}
+                        </div>
+                        <!-- YEAR -->
+                        <div class="single-disc-year">
+                            {{ item.year }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- END MAIN -->
+    </div>
+
+    <!-- LINK SCRIPT AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- LINK SCRIPT VUE -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <!-- LINK SCRIPT JS -->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
